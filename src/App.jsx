@@ -1,8 +1,8 @@
-import { Navbar, Welcome, Dock } from '#components';
+import {Navbar, Welcome, Dock, Home} from '#components';
 import { Draggable} from "gsap/Draggable";
 gsap.registerPlugin(Draggable);
 import gsap from "gsap";
-import {Finder, Image, Resume, Safari, Terminal, Text, Contact } from "#windows/index.js";
+import {Contact, Finder, Image, Photos, Resume, Safari, Terminal, Text} from "#windows/index.js";
 
 const App = () => {
     return (
@@ -12,11 +12,13 @@ const App = () => {
             <Dock />
             <Terminal />
             <Safari />
+            <Photos />
             <Resume />
             <Finder />
             <Text />
             <Image />
             <Contact />
+            <Home />
         </main>
     )
 }
